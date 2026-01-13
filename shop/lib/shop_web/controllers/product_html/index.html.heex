@@ -1,0 +1,11 @@
+<h1>Product Listing Page</h1>
+
+<p :if={@promo}>You have a promotional code</p>
+
+<%= for product <- @products do %>
+    <.product product={product}/>
+<% end %>
+
+<br/>
+
+<.product :for={product <- @products} product={product} />

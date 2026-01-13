@@ -1,0 +1,13 @@
+<Layouts.flash_group flash={@flash} />
+
+<h1>Welcome to SHOP</h1>
+
+<form>
+  <select name="console" id="console">
+    <option value="pc">PC</option>
+    <option value="xbox">Xbox</option>
+  </select>
+  <button type="submit">Save</button>
+</form>
+
+<p>Selected console: <%= @console %></p>
